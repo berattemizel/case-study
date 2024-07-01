@@ -1,0 +1,31 @@
+{
+  "name": "berat-case-study",
+  "version": "1.0.0",
+  "description": "Hepsiburada Test Suite",
+  "main": "index.js",
+  "author": "berat.temizel@ozu.edu.tr",
+  "license": "ISC",
+  "scripts": {
+    "parametric": "npx cypress run --spec 'cypress/integration/*.feature' --browser $BROWSER --headless",
+    "chrome": "BROWSER=chrome npm run parametric",
+    "firefox": "BROWSER=firefox npm run parametric"
+  },
+  "dependencies": {
+    "cypress": "^6.8.0",
+    "cypress-audit": "^0.3.0",
+    "cypress-cucumber-preprocessor": "^4.0.3",
+    "cypress-timings": "^1.0.0",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-cypress": "^2.11.2",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "devDependencies": {
+    "mocha-junit-reporter": "^2.2.1"
+  }
+}

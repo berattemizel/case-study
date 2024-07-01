@@ -1,0 +1,16 @@
+{
+  "baseUrl": "https://www.google.com",
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 25000,
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "video": true,
+  "screenshotOnRunFailure": true,
+  "reporter": "mocha-junit-reporter",
+  "reporterOptions": {
+    "mochaFile": "results/hepsiburada-output-[hash].xml",
+    "toConsole": true
+  },
+  "testFiles": ["**/*.{feature,features}"],
+  "failOnStatusCode": false
+}
