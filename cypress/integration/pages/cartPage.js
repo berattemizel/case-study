@@ -1,8 +1,8 @@
 class CartPage {
     
     offeringPriceSelector = '#offering-price';
-    currentPriceBeforePointSelector = 'span[data-bind="markupText:currentPriceBeforePoint"]';
-    currentPriceAfterPointSelector = 'span[data-bind="markupText:currentPriceAfterPoint"]';
+    currentPriceBeforePointSelector = 'span#offering-price > span:nth-of-type(1)';
+    currentPriceAfterPointSelector = 'span#offering-price > span:nth-of-type(2)';
     addToCartButtonSelector = 'button#addToCart';
     cartNotificationSelector = 'Ürün sepetinizde';
     gotoCartButtonSelector = 'Sepete git';

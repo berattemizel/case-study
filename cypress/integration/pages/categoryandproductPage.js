@@ -36,6 +36,7 @@ class CategoryandProductPage {
     categoryRandomly() {
         cy.get(this.categorySelector).then($categories => {
             const randomCategory = Cypress._.sample($categories);
+            cy.wait(1000)
             cy.wrap(randomCategory).click();
         });
     }
@@ -43,6 +44,7 @@ class CategoryandProductPage {
     subCategoryRandomly() {
         cy.get(this.subCategorySelector).then($subcategories => {
             const randomSubcategory = Cypress._.sample($subcategories);
+            cy.wait(1000)
             cy.wrap(randomSubcategory).click();
         });
     }
