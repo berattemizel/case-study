@@ -8,7 +8,7 @@ Follow the steps below to set up the project:
 
 1. **Clone the repository:**
     ```sh
-    git clone [<repo-url>](https://github.com/berattemizel/case-study-cypress.git)
+    git clone (https://github.com/berattemizel/case-study-cypress.git)
     cd case-study-cypress
     ```
 
